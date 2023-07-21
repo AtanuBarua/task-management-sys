@@ -30,7 +30,7 @@
                 <tbody>
                     @foreach ($tasks as $item)
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row">{{$loop->iteration}}</th>
                         <td>{{$item->title}}</td>
                         <td>{{$item->description}}</td>
                         <td>{{$item->deadline}}</td>
