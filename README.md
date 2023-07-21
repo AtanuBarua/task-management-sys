@@ -1,4 +1,4 @@
-noTask Management System. Users can create task and assign to another user. Assignee user will get notification email.
+Task Management System. Users can create task and assign to another user. Assignee user will get notification email.
 
 1. composer install
 2. npm install
