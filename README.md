@@ -1,6 +1,6 @@
 Task Management System. Users can create task and assign to another user. Assignee user will get notification email.
 
-1. Composer install
+1. composer install
 2. npm install
 3. cp .env.example .env
 4. php artisan key:generate
