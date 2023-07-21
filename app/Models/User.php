@@ -46,4 +46,8 @@ class User extends Authenticatable
     public function getOtherUsers(){
         return self::query()->where('id','!=',Auth::id())->get();
     }
+
+    public function findUserById($id) {
+        return self::query()->find($id);
+    }
 }

@@ -15,7 +15,7 @@ class TaskController extends Controller
         $validatedData = $request->validated();
         $data = $validatedData;
         $data['created_by'] = Auth::id();
-        $user = User::find($data['assigned_to']);
+        $user = (new User())->findUserById($data['assigned_to']);
         try {
             (new Task())->createTask($data);
              event(new TaskAssigned($user->email));
