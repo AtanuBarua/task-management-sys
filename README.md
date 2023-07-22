@@ -4,6 +4,6 @@ Task Management System. Users can create task and assign to another user. Assign
 2. npm install
 3. cp .env.example .env
 4. php artisan key:generate
-5. setup mailtrap in env
+5. configure db and mailtrap in env
 6. php artisan migrate
 7. php artisan queue:work
